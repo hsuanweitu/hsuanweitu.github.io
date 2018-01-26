@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<!-- Main page -->
+
+<html>
+  <head>
+    <title>Hsuan Wei Tu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+    .w3-bar-block .w3-bar-item {padding:20px}
+    </style>
+  </head>
+
+  <body>
+  <!-- Sidebar (hidden by default) -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+    class="w3-bar-item w3-button">Close Menu</a>
+    <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+  </nav>
+
+  <!-- Top bar -->
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+<!-- add a link to resume -->      <a href="resume.html"><div class="w3-right w3-padding-16">Resume</div></a>
+      <div class="w3-center w3-padding-16">My Food</div>
+    </div>
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      <div class="w3-quarter">
+        <a href="Breads_and_Quick_Breads.html">
+          <img src="images/Breads_and_Quick_Breads/Ciabattas.jpg" alt="Bread" style="width:100%">
+        </a>
+        <h3>Breads & Quick Breads</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="Cakes.html">
+          <img src="images/Cakes/Hazelnut-Mocha_Torte.jpg" alt="Cake" style="width:100%">
+        </a>
+        <h3>Cakes</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="Chocolates_and_Confections.html">
+          <img src="images/Chocolates_and_Confections/Raspberry_Pralines3.jpg" alt="Confection" style="width:100%">
+        </a>
+        <h3>Chocolates & Confections</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="Choux_Pastries.html">
+          <img src="images/Choux_Pastries/Choquettes.jpg" alt="Choux" style="width:100%">
+        </a>
+        <h3>Choux Pastries</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+    </div>
+
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-quarter">
+        <a href="Cookies_and_Petit_Fours.html">
+          <img src="images/Cookies_and_Petit_Fours/Checkerboard_Cookies.jpg" alt="Cookie" style="width:100%">
+        </a>
+        <h3>Cookies & Petit Fours</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="Creams.html">
+          <img src="images/Creams/Diplomat_Cup.jpg" alt="Cream" style="width:100%">
+        </a>
+        <h3>Creams</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="Custards.html">
+          <img src="images/Custards/Pot_de_Crème.jpg" alt="Custard" style="width:100%">
+        </a>
+        <h3>Custards</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="Hot_and_Cold_Desserts.html">
+          <img src="images/Hot_and_Cold_Desserts/Fruit_Cobbler.jpg" alt="Dessert" style="width:100%">
+        </a>
+        <h3>Hot & Cold Desserts</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+    </div>
+
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-quarter">
+        <a href="Pies_and_Tarts.html">
+          <img src="images/Pies_and_Tarts/Fruit_Tart4.jpg" alt="Pie" style="width:100%">
+        </a>
+        <h3>Pies & Tarts</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="Puff_Pastries.html">
+          <img src="images/Puff_Pastries/Cream_Horns.jpg" alt="Puff" style="width:100%">
+        </a>
+        <h3>Puff Pastries</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+      <div class="w3-quarter">
+        <a href="Viennoiseries.html">
+          <img src="images/Viennoiseries/Swiss_National_Bread.jpg" alt="Viennoiseries" style="width:100%">
+        </a>
+        <h3>Viennoiseries</h3>
+<!--edit description-->        <p>Short description</p>
+      </div>
+    </div>
+
+    <!-- empty line that has the ID of about -->
+    <hr id="about">
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding w3-center w3-border">
+      <div class="w3-half w3-padding">
+        <img src="images/profile.jpg" alt="Me" class="w3-image" style="display:block; margin:auto" width="800" height="533">
+      </div>
+      <div class="w3-half w3-padding">
+        <h4><b>Hsuan Wei Tu</b></h4>
+        <h6><i>Bake Food With Passion</i></h6>
+<!-- add small description or whatever about yourself -->        <p>Insert description here.</p>
+      </div>
+    </div>
+
+    <!-- empty line that has the ID of about -->
+    <hr id="contact">
+
+    <!-- Footer -->
+    <footer class="w3-row-padding w3-padding-32">
+      <div class="w3-third">
+        <h3>Credits</h3>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      </div>
+
+      <div class="w3-third">
+<!-- add something here -->        <br>
+      </div>
+
+      <div class="w3-third w3-serif">
+        <h3>Contact</h3>
+        <p>
+          Hsuan Wei Tu<br>
+		  HTu01@wildcats.jwu.edu<br>
+<!-- add major --><br>
+          Johnson & Wales University, Rhode Island
+        </p>
+      </div>
+    </footer>
+
+  <!-- End page content -->
+  </div>
+
+  <!-- Javascript -->
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+
+  </body>
+</html>
