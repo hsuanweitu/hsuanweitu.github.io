@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<!-- Main page -->
+
+<html>
+  <head>
+    <title>Hsuan Wei Tu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <script src="script.js"></script>
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+    .w3-bar-block .w3-bar-item {padding:20px}
+    </style>
+  </head>
+
+  <body>
+
+  <!-- Top bar -->
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px; margin:auto">
+      <a href="index.html"><div class="w3-padding-16 w3-left">Home</div></a>
+      <a href="resume.html"><div class="w3-right w3-padding-16">Resume</div></a>
+      <div class="w3-center w3-padding-16">Bread & Quick Breads Gallery</div>
+    </div>
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-1-1')">
+          <img src="images/Breads_and_Quick_Breads/Bagels.jpg" alt="Bagels" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-1-1">
+          <p>Bagels</p>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-1-2')">
+          <img src="images/Breads_and_Quick_Breads/Baguettes.jpg" alt="Baguettes" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-1-2">
+          <p>Baguettes</p>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-1-3')">
+          <img src="images/Breads_and_Quick_Breads/Baguettes_Extra.jpg" alt="Baguettes2" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-1-3">
+          <p>Baguettes (Homemade)</p>
+        </div>
+      </div>
+	  	  
+    </div>
+	
+	<!-- Second Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-2-1')">
+          <img src="images/Breads_and_Quick_Breads/Biscuits.jpg" alt="Biscuits" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-2-1">
+          <p>Biscuits</p>
+        </div>
+      </div>
+
+	  <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-2-2')">
+          <img src="images/Breads_and_Quick_Breads/Challahs.jpg" alt="Challahs" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-2-2">
+          <p>Challahs</p>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-2-3')">
+          <img src="images/Breads_and_Quick_Breads/Ciabattas.jpg" alt="Ciabattas" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-2-3">
+          <p>Ciabattas</p>
+        </div>
+      </div>
+	  
+    </div>
+
+	<!-- Third Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-3-1')">
+          <img src="images/Breads_and_Quick_Breads/Deli_Rye_Bread.jpg" alt="Deli_Rye" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-3-1">
+          <p>Deli Rye Bread</p>
+        </div>
+      </div>
+
+	  <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-3-2')">
+          <img src="images/Breads_and_Quick_Breads/Honey_Rye_Bread.jpg" alt="Honey_Rye" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-3-2">
+          <p>Honey Rye Bread</p>
+        </div>
+      </div>
+
+	  <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-3-3')">
+          <img src="images/Breads_and_Quick_Breads/Honey_Rye_Bread_Extra.jpg" alt="Honey_Rye2" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-3-3">
+          <p>Honey Rye Bread (Homemade)</p>
+        </div>
+      </div>
+	  	  
+    </div>
+	
+	<!-- Fourth Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+   	      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-4-1')">
+          <img src="images/Breads_and_Quick_Breads/Kaiser_Rolls.jpg" alt="Kaiser" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-4-1">
+          <p>Kaiser Rolls</p>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-4-2')">
+          <img src="images/Breads_and_Quick_Breads/Mountain_Bread.jpg" alt="Mountain" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-4-2">
+          <p>Mountain Bread</p>
+        </div>
+      </div>
+
+	  <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-4-3')">
+          <img src="images/Breads_and_Quick_Breads/Pitas.jpg" alt="Pitas" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-4-3">
+          <p>Pitas</p>
+        </div>
+      </div>
+	  
+    </div>
+
+	<!-- Fifth Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-5-1')">
+          <img src="images/Breads_and_Quick_Breads/Regional_Shape_Bread.jpg" alt="Regional" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-5-1">
+          <p>Regional Shape Bread</p>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-5-2')">
+          <img src="images/Breads_and_Quick_Breads/Rosemary_and_Cheese_Focaccia.jpg" alt="Focaccia" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-5-2">
+          <p>Rosemary and Cheese Focaccia</p>
+        </div>
+      </div>
+
+	  <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-5-3')">
+          <img src="images/Breads_and_Quick_Breads/Scones.jpg" alt="Scones" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-5-3">
+          <p>Scones</p>
+        </div>
+      </div>
+	  
+    </div>
+
+	<!-- Sixth Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-6-1')">
+          <img src="images/Breads_and_Quick_Breads/Sesame_Crackers.jpg" alt="Crackers" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-6-1">
+          <p>Sesame Crackers</p>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-6-2')">
+          <img src="images/Breads_and_Quick_Breads/Seven_Grain_Wheat_and_Raisin_Bread.jpg" alt="Seven_Grain" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-6-2">
+          <p>Seven Grain Wheat and Raisin Bread</p>
+        </div>
+      </div>
+
+	  <div class="w3-third">
+        <div class="w3-button" onclick="show_text('p-6-3')">
+          <img src="images/Breads_and_Quick_Breads/Sourdough_Bread.jpg" alt="Sourdough" style="width:100%">
+        </div>
+        <div class="w3-xlarge w3-animate-opacity" style="display:none;z-index:2; min-width:300px" id="p-6-3">
+          <p>Sourdough Bread</p>
+        </div>
+      </div>
+	  
+    </div>
+	
+  </div>
+
+  <br><br><br>
+  </body>
+</html>
