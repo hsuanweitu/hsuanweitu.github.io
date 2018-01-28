@@ -14,24 +14,56 @@
     .w3-bar-block .w3-bar-item {padding:20px}
     </style>
   </head>
+
   <body>
-
-  <!-- Top bar -->
-  <div class="w3-top">
-    <div class="w3-white w3-xlarge" style="max-width:1200px; margin:auto">
-      <a href="index.html"><div class="w3-padding-16 w3-left">Home</div></a>
-        <div class="w3-padding-16 w3-right">-</div>
-      <div class="w3-center w3-padding-16">My Resume</div>
+    <!-- Top bar -->
+    <div class="w3-top">
+      <div class="w3-white w3-xlarge" style="max-width:1200px; margin:auto">
+        <a href="index.html"><div class="w3-padding-16 w3-left">Home</div></a>
+        <div class="w3-right w3-padding-16"></div>
+        <div class="w3-center w3-padding-16"></div>
+      </div>
     </div>
-  </div>
 
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-    <div class="w3-row-padding w3-padding-16 w3-center">
-      <embed src="Resume.pdf" width="800px" height="1100px" />
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px; margin-top:100px">
+      <div class="w3-container w3-padding w3-center">
+        <button class="w3-button w3-black" onclick="switch_tab(event,'tab_1')">Resume</button>
+        <button class="w3-button w3-black" onclick="switch_tab(event,'tab_2')">Certificate</button>
+      </div>
+
+      <div class="w3-row-padding w3-padding-16 w3-center">
+        <!-- Resume tab -->
+        <div class="tab" id='tab_1'>
+          <embed src="Resume.pdf" width="800px" height="1100px" />
+        </div>
+
+        <!-- Certificate tab -->
+        <div class="tab" id='tab_2' style="display:none">
+          <img src="images/Safety_Certificate.jpg" alt="Safety_Certificate" style="width:100%">
+        </div>
+      </div>
+
     </div>
-  </div>
 
-  <br><br>
+    <br><br>
+
+    <script>
+      function switch_tab(evt, Name) {
+        var i, x;
+
+        // Get all class "tab" tags
+        x = document.getElementsByClassName("tab");
+
+        // Change all display styles to "none" to hide them.
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        // Display current tab content.
+        document.getElementById(Name).style.display = "block";
+      }
+    </script>
+
   </body>
 </html>
